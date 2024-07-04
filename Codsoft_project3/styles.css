@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #313131;
+    color: rgb(255, 255, 255);
+    padding: 1em 0;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 2px 5px 10px #707070 inset;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: x-large;
+}
+
+nav ul li a:hover{
+    color:#30a7e2;
+    font-size:larger ;
+}
+
+
+section {
+    padding: 4em;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+section#home {
+    background-color: #30a7e2;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+
+section#home h1{
+    font-size: 45px;
+    font-weight:800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(36, 36, 36);
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid orange; 
+    white-space: nowrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size:x-large;
+    font-weight: 500;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+section#about {
+    background-color: #dbdbdb;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+section#about h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 38px;
+}
+
+section#about p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 38px;
+    font-style: italic;
+    font-size: larger;
+}
+
+section#skills {
+    background-color: #30a7e2;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+section#skills h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 38px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    width: 150px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5em;
+}
+
+section#projects {
+    background-color: #dbdbdb;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+section#projects h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 38px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 45%;
+    padding: 1em;
+    margin: 1em;
+    background-color: #30a7e2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+section#resume {
+    background-color: #30a7e2;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#resume {
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: #555;
+}
+
+.resume-image {
+    margin-top: 1em;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+section#contact {
+    background-color: #dbdbdb;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.form-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #969696;
+    border: 10px solid #000000;
+    border-radius: 5px;
+}
+
+.contact-section {
+    padding: 2em;
+    text-align: center;
+}
+
+.form-container.open {
+    display: block; 
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea {
+    width: calc(100% - 20px);
+    padding: 0.5em;
+    margin-bottom: 1em;
+    background-color: #c0bfbf;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
